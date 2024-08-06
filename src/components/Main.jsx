@@ -1,5 +1,7 @@
 import aboutImage from "../assets/img.jpg";
 import githubIcon from "../assets/github.svg";
+import appIcon from "../assets/application-braces-outline.svg";
+import { Link } from "react-router-dom";
 
 const imgs = [
   aboutImage,
@@ -29,13 +31,13 @@ const Main = () => {
                       alt="github link to project"
                     />
                   </a>
-                  <a href="#">
+                  <Link to="/project">
                     <img
                       className="w-5 h-5"
-                      src={githubIcon}
+                      src={appIcon}
                       alt="github link to project"
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <p className="overflow-hidden">
