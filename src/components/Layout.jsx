@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 const Layout = () => {
   return (
-    <div className="flex flex-col px-20 py-12  gap-8 min-h-full">
+    <div className="flex flex-col px-20 py-12 gap-8 min-h-screen">
       <Header />
       <Main />
       <Footer />
