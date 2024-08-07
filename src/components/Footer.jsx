@@ -6,7 +6,7 @@ import emailIcon from "../assets/email-outline.svg";
 
 const Footer = () => {
   return (
-    <footer className="h-1/3 flex justify-around mt-10">
+    <footer className="bg-gradient-to-b from-black to-orange-600 h-1/3 flex justify-around px-20 pb-12 text-white">
       <div className="w-1/2 flex flex-col justify-between">
         <h1 className="text-2xl">Contact me</h1>
         <p>

@@ -1,4 +1,5 @@
-import rustLogo from "./assets/rust-wallpaper.png";
+// import rustLogo from "./assets/rust-wallpaper.png";
+import rustLogo from "./assets/rust_programming_crab_sea.webp";
 import rustIcon from "./assets/rust-original.svg";
 import reactLogo from "./assets/react-original.svg";
 import typescriptLogo from "./assets/typescript-original.svg";

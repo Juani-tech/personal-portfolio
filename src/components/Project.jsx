@@ -6,7 +6,7 @@ const Project = ({ project }) => {
   //   backgroundImage: "url(/src/assets/html-tag.jpg)",
   // };
   return (
-    <div className="min-h-screen flex flex-col font-sans">
+    <div className="min-h-screen flex flex-col font-mono">
       <header className="flex flex-1 justify-center ">
         <img
           className="h-1/3 w-full object-cover fixed top-0 left-0 z-0"
