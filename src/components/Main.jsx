@@ -4,18 +4,12 @@ import projectsData from "../projects-data";
 
 const Main = () => {
   return (
-    <main
-      className="h-1/3 flex flex-col bg-black px-20 py-12"
-      // className="h-1/3 flex flex-col bg-gradient-to-r from-indigo-800  via-sky-500 to-black px-20 py-12 "
-      // className="h-1/3 flex flex-col bg-cover bg-gradient-to-r from-indigo-800  via-sky-500 to-black px-20 py-12 "
-      // style={{ backgroundImage: `url(${backgroundImg})` }}
-    >
-      <h1 className="text-center text-4xl font-bold text-white">My work</h1>
+    <main className="h-1/3 flex flex-col bg-black px-20 py-12">
+      <h1 className="text-center text-4xl font-mono text-white">My work</h1>
       <section className="h-1/3 grid grid-cols-3 gap-10 mt-10">
         {projectsData.map((project, index) => (
           <div
-            // className="bg-gradient-to-b from-blue-500 to-blue-800 text-white overflow-hidden pb-6 rounded-xl"
-            className="bg-orange-500 text-white overflow-hidden pb-6 rounded-xl"
+            className="bg-slate-900 text-gray-300 hover:text-white  overflow-hidden pb-6 rounded-xl"
             key={index}
           >
             <img className="w-full h-4/6 " src={project.imageSrc}></img>
@@ -39,11 +33,7 @@ const Main = () => {
                     </svg>
                   </a>*/}
                   <Link to={`/project/${project.name}`}>
-                    {/* <img
-                      className="w-7 h-7"
-                      src={appIcon}
-                      alt="github link to project"
-                    /> */}
+                    {/* app icon (change?) */}
                     <svg
                       className="h-6 w-6 fill-white"
                       xmlns="http://www.w3.org/2000/svg"
