@@ -1,20 +1,22 @@
-import aboutImage from "../assets/img.jpg";
+import aboutImage from "../assets/beach.jpg";
 
 const Footer = () => {
   return (
-    <footer className="bg-black h-1/3 px-20 py-12 text-white">
-      <div className="bg-slate-900 flex overflow-hidden rounded-2xl">
-        <div className="w-1/2 flex flex-col  py-10 pl-10 justify-between ">
-          <h1 className="text-3xl">Contact me</h1>
+    <footer className="bg-black h-1/3 md:px-20 md:py-12 text-white">
+      <div className="bg-slate-900 flex flex-col md:flex-row overflow-hidden md:rounded-2xl ">
+        <div className="md:w-2/3 flex flex-col px-6 py-10 md:pl-10 text-xl justify-between gap-10 md:gap-10 xl:gap-0">
+          <h1 className="text-5xl md:text-3xl justify-center text-center md:text-start ">
+            Contact me
+          </h1>
           <p>
-            Please get in touch if you think our work could be mutually
+            Please, get in touch if you think our work could be mutually
             beneficial
           </p>
           <div>
             <p>Buenos Aires, Argentina</p>
           </div>
           <div>
-            <div className="flex gap-2">
+            <div className="flex gap-2 items-center">
               <a href="#">
                 {/* email icon */}
                 <svg
@@ -24,15 +26,15 @@ const Footer = () => {
                 >
                   <path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z" />
                 </svg>
-              </a>{" "}
-              <p>jperezdichiazza@gmail.com</p>
+              </a>
+              <p className="break-all text-xl">jperezdichiazza@gmail.com</p>
             </div>
           </div>
-          <div className="flex justify-start items-center gap-10">
+          <div className="flex md:justify-start justify-center md:items-start items-center gap-10 md:gap-0">
             <a href="https://github.com/Juani-tech" target="_blank">
               {/* github */}
               <svg
-                className="h-10 w-10 fill-white"
+                className="md:h-10 md:-w10 h-16 w-16 fill-white"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
               >
@@ -45,7 +47,7 @@ const Footer = () => {
             >
               {/* linkedin */}
               <svg
-                className="h-10 w-10 fill-white"
+                className="md:h-10 md:-w10 h-16 w-16 fill-white"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
               >
@@ -54,7 +56,11 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <img className="max-h-fit w-1/2" src={aboutImage} alt="A beach" />
+        <img
+          className="w-full md:w-1/3 lg:w-1/2 object-cover "
+          src={aboutImage}
+          alt="A beach"
+        />
       </div>
     </footer>
   );
