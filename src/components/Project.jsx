@@ -30,7 +30,7 @@ const Project = ({ project }) => {
               );
             })}
           </div>
-          <p className="break-all text-xl relative mt-6 md:mt-0">
+          <p className="break-words text-xl relative mt-6 md:mt-0">
             {project.description}
           </p>
           <div className="flex justify-center">
