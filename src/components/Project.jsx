@@ -30,7 +30,9 @@ const Project = ({ project }) => {
               );
             })}
           </div>
-          <p className="text-xl relative mt-6 md:mt-0">{project.description}</p>
+          <p className="break-all text-xl relative mt-6 md:mt-0">
+            {project.description}
+          </p>
           <div className="flex justify-center">
             <a className="" href={project.githubUrl} target="_blank">
               <div className="relative group">

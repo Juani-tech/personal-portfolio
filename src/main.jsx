@@ -7,6 +7,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <Router basename="/personal-portfolio">
     <App />
   </Router>
-  // <React.StrictMode>
-  // </React.StrictMode>
 );
